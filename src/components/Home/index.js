@@ -1,4 +1,4 @@
-import AKLogo from './../../assets/images/AK.png';
+import AKLogo from './../../assets/images/AKStyle.png';
 import { Link } from 'react-router-dom';
 import './index.scss';
 
