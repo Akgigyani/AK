@@ -9,8 +9,8 @@
 
 h1 {
     color: #fff;
-    font-size: 50px;
-    margin: 0;
+    font-size: 40px;
+    margin-top: 25px;
     font-family: 'Coolvetica';
     font-weight: 400; 
 
@@ -20,8 +20,8 @@ h1 {
         color: #ffd700;
         font-size: 30px;
         position: absolute;
-        margin-top: -40px;
-        left: 15px;
+        margin-top: -25px;
+        left: 1px;
         opacity: 0.6;
     }
 
@@ -31,16 +31,16 @@ h1 {
         color: #ffd700;
         font-size: 30px;
         position: absolute;
-        margin-top: 28px;
+        margin-top: 20px;
         margin-left: 10px;
         animation: fadeIn 1s 1.7s backwards;
         opacity: 0.6;
     }
 
     img {
-        width: 400px;
+        width: 350px;
         margin-left: -10px;
-        opacity: 1;
+        opacity: 0;
         height: auto;
         animation: rotateIn 1s linear both;
         animation-delay: 1.4s;
@@ -48,12 +48,12 @@ h1 {
 }
 
 h2 {
-    color: #8d8d8d;
+    color: #1db4e2;
     margin-top: 10px;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 18px;
     font-family: sans-serif;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     animation: fadeIn 1s 1.8s backwards;
 }
 
@@ -91,7 +91,7 @@ h2 {
 
     h1 {
         color: #fff;
-        font-size: 35px;
+        font-size: 25px;
         margin: 0;
         font-family: 'Coolvetica';
         font-weight: 400; 
@@ -113,11 +113,28 @@ h2 {
             color: #ffd700;
             font-size: 20px;
             position: absolute;
-            margin-top: 20px;
+            margin-top: 10px;
             margin-left: 15px;
             animation: fadeIn 1s 1.7s backwards;
             opacity: 0.6;
         }
+
+        img {
+            width: 300px;
+            margin-left: -10px;
+            opacity: 1;
+            height: auto;
+            animation: rotateIn 1s linear both;
+            animation-delay: 1.4s;
+        }
+    }
+
+    h2 {
+        font-weight: 400;
+        font-size: 18px;
+        font-family: sans-serif;
+        letter-spacing: 2px;
+        animation: fadeIn 1s 1.8s backwards;
     }
 
 }
