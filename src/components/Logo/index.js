@@ -1,7 +1,7 @@
 import './index.scss';
 import AKLogo from './../../assets/images/AKLogoLarge.PNG';
 
-const Logo = () => {
+const MainLogo = () => {
     return (
         <div className="logo-container">
             <img className="solid-logo" src={AKLogo} alt='large-logo' />
@@ -9,4 +9,4 @@ const Logo = () => {
     )
 } 
 
-export default Logo
+export default MainLogo

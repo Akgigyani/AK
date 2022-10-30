@@ -1,8 +1,9 @@
 import AKLogo from './../../assets/images/AKStyle.png';
 import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
-import Logo from '../Logo'
-import AnimatedLetters from '../AnimatedLetters';
+import MainLogo from '../Logo'
+// import AnimatedLetters from '../AnimatedLetters';
+import Loader from 'react-loaders'
 import './index.scss';
 
 const Home = () => {
@@ -52,8 +53,9 @@ const Home = () => {
                 <h2>Web Developer / Data Enthusiast / Blogger</h2>
                 <Link to="/contact" className="flat-button">CONTACT ME</Link>
             </div>
-            <Logo />
+            <MainLogo />
         </div>
+        <Loader type="pacman" />
         </>
     );
 
