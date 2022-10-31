@@ -36,3 +36,18 @@
         left: 50%;
     }
   }
+
+// For Large Monitor Screen
+    @media screen and (min-width: 1900px) {
+
+    .logo-container {
+      z-index: 0;
+      width: 800px;
+      height: 1009px;
+      position: absolute;
+      top: 5%;
+      right: 5%;
+      bottom: 0;
+      left: auto;
+    }
+  }

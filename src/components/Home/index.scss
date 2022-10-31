@@ -138,3 +138,47 @@ h2 {
     }
 
 }
+
+// For Large Monitor Screen
+@media screen and (min-width: 1900px) {
+    
+    h1 {
+        color: #fff;
+        font-size: 80px;
+        margin-top: 25px;
+        font-family: 'Coolvetica';
+        font-weight: 400; 
+    
+        &::before{
+            content: '<h1>';
+            font-family: 'Le Belle Aurore';
+            color: #ffd700;
+            font-size: 40px;
+            position: absolute;
+            margin-top: -25px;
+            left: 1px;
+            opacity: 0.6;
+        }
+    
+        &::after {
+            content: '</h1>';
+            font-family: 'Le Belle Aurore';
+            color: #ffd700;
+            font-size: 40px;
+            position: absolute;
+            margin-top: 50px;
+            margin-left: 10px;
+            animation: fadeIn 1s 1.7s backwards;
+            opacity: 0.6;
+        }
+    
+        img {
+            width: 400px;
+            margin-left: -10px;
+            opacity: 0;
+            height: auto;
+            animation: rotateIn 1s linear both;
+            animation-delay: 1.4s;
+        }
+    }
+}
