@@ -1,11 +1,33 @@
 import Loader from 'react-loaders'; 
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import './index.scss';
+import emailjs from '@emailjs/browser'
 
 const Contact = () => {
 
     const [letterClass, setLetterClass] = useState('text-animate')
+    const refForm = useRef()
 
+    const sendEmail = (e) => {
+      e.preventDefault();
+
+      emailjs
+        .sendForm(
+          'service_gm1nhnp',
+          'template_j6pd5qs',
+          refForm.current,
+          'uVZmRcqVkiBm25AAz'
+        )
+        .then (
+          () => {
+            alert("Message sent successfully!")
+            window.location.reload(false)
+          },
+          () => {
+            alert("Failed to send the message, please try again!")
+          }
+        )
+    }
   return (
     <>
       <div className="container contact-page">
@@ -28,7 +50,7 @@ const Contact = () => {
             questions, don't hesitate to contact me using below form either.
           </p> */}
           <div className="contact-form">
-            <form>
+            <form ref={refForm} onSubmit={sendEmail}>
               <ul>
                 <li className="half">
                   <input placeholder="Name" type="text" name="name" required />
