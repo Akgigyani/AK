@@ -1,7 +1,7 @@
 import Loader from 'react-loaders'; 
 import React, { useRef, useState } from 'react';
 import './index.scss';
-import emailjs from '@emailjs/browser'
+import * as emailjs from '@emailjs/browser'
 
 const Contact = () => {
 
@@ -13,7 +13,7 @@ const Contact = () => {
 
       emailjs
         .sendForm(
-          'service_gm1nhnp',
+          'service_nbkkyr6',
           'template_j6pd5qs',
           refForm.current,
           'uVZmRcqVkiBm25AAz'
