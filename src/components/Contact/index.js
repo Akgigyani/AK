@@ -4,7 +4,7 @@ import './index.scss';
 import * as emailjs from '@emailjs/browser'
 
 // Mapping libs
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+// import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 
 const Contact = () => {
 
@@ -88,7 +88,7 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        <div className="info-map">
+        {/* <div className="info-map">
           <br />
           Aamir Khan,
           <br />
@@ -97,8 +97,8 @@ const Contact = () => {
           United Kingdom,
           <br />
           <span>Aamirkgigyani@gmail.com</span>
-        </div>
-        <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false}>
+        </div> */}
+        {/* <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false}>
           <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -108,7 +108,7 @@ const Contact = () => {
               A pretty CSS3 popup. <br /> Easily customizable.
             </Popup>
           </Marker>
-        </MapContainer>
+        </MapContainer> */}
       </div>
       <Loader type="pacman" />
     </>
